@@ -1,24 +1,24 @@
-# README
+# レジュメ 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 筋トレ好きのための筋トレタスク管理アプリ
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+pcスペック
+* MacBook Air (13-inch, Early 2015)
 
-* Configuration
+* Mac OS Mojave
 
-* Database creation
+* ruby 2.6.3
 
-* Database initialization
+* rails 5.2.3
 
-* How to run the test suite
+model
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Task  
+* name:string
+* menu:string 
+* time:integer
+* rep:integer
+* set:integer
+* comment:text
