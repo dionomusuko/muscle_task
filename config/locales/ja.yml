@@ -14,7 +14,7 @@ ja:
         id: ID
         name: 名称
         menu: トレーニングメニュー
-        time: 時間
+        time: 時間(分)
         rep: レップ数
         set: セット数
         commnet: 説明
