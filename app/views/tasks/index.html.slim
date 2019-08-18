@@ -23,3 +23,4 @@ h1 タスク一覧
                   td = ts.created_at
                   td
                     =link_to '編集', edit_task_path(ts), class: 'btn btn-primary mr-3'
+                    =link_to '削除', ts, method: :delete, data: { confirm: "タスク「#{ts.name}」を削除してもよろしいですか？"}, class: 'btn btn-danger'
