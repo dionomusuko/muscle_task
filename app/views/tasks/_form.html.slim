@@ -1,0 +1,20 @@
+= form_with model: task, local: true do |f|
+  .form_group
+    = f.label :name
+    = f.text_field :name, class: 'form-control', id: 'task_name'
+  .form_group
+    = f.label :menu
+    = f.text_field :menu, class: 'form-control', id: 'task_menu'
+  .form_group
+    = f.label :time
+    = f.text_field :time, class: 'form-control', id: 'task_time'
+  .form_group
+    = f.label :rep
+    = f.number_field :rep, class: 'form-control', id: 'task_rep'
+  .form_group
+    = f.label :set
+    = f.number_field :set, class: 'form-control', id: 'task_set'
+  .form_group
+    = f.label :comment
+    = f.text_area :comment, row: 5, class: 'form-control', id: 'task_comment'
+    = f.submit nil, class: 'btn btn-primary'
