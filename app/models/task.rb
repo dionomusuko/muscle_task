@@ -9,4 +9,8 @@ class Task < ApplicationRecord
 
   validates :time, presence: true
 
+  belongs_to :user
+
+  scope :recent, -> { order(created_at: :desc)}
+
 end

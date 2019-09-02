@@ -6,6 +6,8 @@ ruby '2.6.3'
 gem 'i18n'
 #secret file
 gem 'dotenv-rails'
+# Use Activemodel has_secure_password
+gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use mysql as the database for Active Record
@@ -47,6 +49,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Rspec
+  gem 'rspec-rails', '~> 3.7'
+  # Factory bot
+  gem 'factory_bot_rails', '~> 4.11'
 end
 
 group :development do
