@@ -4,7 +4,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+   @user = User.find(params[:id])
   end
 
   def new
@@ -36,7 +36,7 @@ class Admin::UsersController < ApplicationController
   end
 
   def destroy
-    @user = user.find(params[:id])
+    @user = User.find(params[:id])
     @user.destroy
     redirect_to admin_user_url, notice: "ユーザー「#{@user.name}」を削除しました。"
   end
