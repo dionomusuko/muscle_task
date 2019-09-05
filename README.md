@@ -13,6 +13,17 @@ pcスペック
 
 * rails 5.2.3
 
+* DB:Mysql
+
+* テンプレートエンジン:Slim 
+
+機能
+* タスクCRUD機能
+* ログイン機能
+* バリデーション機能
+* Rspecを用いたテスト機能
+
+
 model
 
 Task  
@@ -22,3 +33,9 @@ Task
 * rep:integer
 * set:integer
 * comment:text
+
+User
+* name:string
+* email:string
+* password:password_digest
+* admin:boolean
