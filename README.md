@@ -2,7 +2,11 @@
 
 ### 筋トレ好きのための筋トレタスク管理アプリ
 
+#### Heroku： https://muscle-task.herokuapp.com/login
 
+#### ログイン
+  * メールアドレス：admin01@example.com
+  * パスワード：password
 
 pcスペック
 * MacBook Air (13-inch, Early 2015)
