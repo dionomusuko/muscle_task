@@ -12,3 +12,10 @@ User.create!(
         password: 'password',
         password_confirmation: 'password',
 )
+
+User.create!(
+    name: 'test',
+    email: 'test.com',
+    password: 'password',
+    password_confirmation: 'password',
+)
