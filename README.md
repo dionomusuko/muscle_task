@@ -5,8 +5,8 @@
 #### Heroku： https://muscle-task.herokuapp.com/login
 
 #### ログイン
-  * メールアドレス：admin01@example.com
-  * パスワード：password
+
+ログイン画面に行くとテストログインが可能です
 
 pcスペック
 * MacBook Air (13-inch, Early 2015)
@@ -26,6 +26,7 @@ pcスペック
 * ログイン機能
 * バリデーション機能
 * Rspecを用いたテスト機能
+* テストユーザーログイン
 
 
 model
