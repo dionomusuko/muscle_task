@@ -10,4 +10,9 @@ h1 ログイン
   .form-group
     = f.label :password_confirmation, 'パスワード（確認）'
     = f.password_field :password_confirmation, class: 'form-control'
-  = f.submit 'ログインする', class: 'btn btn-primary'
+  = f.submit 'ログイン', class: 'btn btn-primary'
+  p = f.hidden_field :email, value: 'sample@abc.com'
+  = f.hidden_field :password, value: 'password'
+  = f.submit 'テストログイン', class: 'btn btn-success'
+
+

@@ -2,7 +2,11 @@ class TasksController < ApplicationController
   #before_action :set_task, only: %i[show edit update destroy]
 
   def index
-    @tasks = current_user.tasks
+    if current_user
+      @tasks = current_user.tasks
+    else
+      redirect_to root_path, notice: "ログインしてください"
+    end
   end
 
   def show
@@ -24,7 +28,6 @@ class TasksController < ApplicationController
   end
 
   def destroy
-
     @task.destroy
     redirect_to tasks_url, notice: "タスク「#{@task.name}」を削除しました。"
   end
