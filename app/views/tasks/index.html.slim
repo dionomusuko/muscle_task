@@ -13,14 +13,14 @@ h1 タスク一覧
         th = Task.human_attribute_name(:created_at)
         th
       thbody
-            - @tasks.each do |ts|
-                tr
-                  td = link_to ts.name, ts
-                  td = ts.menu
-                  td = ts.time
-                  td = ts.rep
-                  td = ts.set
-                  td = ts.created_at
-                  td
-                    =link_to '編集', edit_task_path(ts), class: 'btn btn-primary mr-3'
-                    =link_to '削除', ts, method: :delete, data: { confirm: "タスク「#{ts.name}」を削除してもよろしいですか？"}, class: 'btn btn-danger'
+        - @tasks.each do |ts|
+          tr
+            td = ts.user.name
+            td = ts.menu
+            td = ts.time
+            td = ts.rep
+            td = ts.set
+            td = ts.created_at
+            td
+              =link_to '編集', edit_task_path(ts), class: 'btn btn-primary mr-3'
+              =link_to '削除', ts, method: :delete, data: { confirm: "タスク「#{ts.name}」を削除してもよろしいですか？"}, class: 'btn btn-danger'
