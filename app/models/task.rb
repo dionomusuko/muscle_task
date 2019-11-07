@@ -1,5 +1,5 @@
 class Task < ApplicationRecord
-  validates :name, presence: true
+  validates :menu, presence: true
 
 
   belongs_to :user
