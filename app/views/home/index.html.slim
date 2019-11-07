@@ -1,5 +1,16 @@
-h1.theme このサイトでは、今日おこなった筋トレのタスク管理ができます!
+.home-main
+  h1.text-uppercase.text-black.font-weight-bold Muscle_taskへようこそ
+  p ここでは、日々の筋トレを周りと共有できます
 
-p 皆さんで共有していきましょう
+.rectangle-1
+  .image-1
+  p.message 効果的な筋トレの方法・トレーニングを紹介
+  .btn-set.btn-xl
+    = link_to 'blog', '/#', class: 'btn btn-primary btn-lg'
 
+.rectangle-2
+  .image-2
+  p.message 日々の筋トレタスク
+  .btn-set.btn-xl
+    = link_to 'タスク一覧', tasks_path, class: 'btn btn-primary btn-lg'
 

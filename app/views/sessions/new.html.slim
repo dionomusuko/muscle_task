@@ -7,4 +7,7 @@ h1 ログイン
   .form-group
     = f.label :password, 'パスワード'
     = f.password_field :password, class: 'form-control', id: 'session_password'
+  .form-group
+    = f.label :password_confirmation, 'パスワード（確認）'
+    = f.password_field :password_confirmation, class: 'form-control'
   = f.submit 'ログインする', class: 'btn btn-primary'

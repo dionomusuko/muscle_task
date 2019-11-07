@@ -1,1 +1,61 @@
 @import "bootstrap";
+
+body{
+  background-color: #d1eecc;
+}
+
+
+.home-main{
+  margin-top: 30px;
+  text-align: center;
+}
+.rectangle-1{
+  position: absolute;
+  width: 427px;
+  height: 506px;
+  left: 198px;
+  top: 242px;
+  background: #C4C4C4;
+}
+.rectangle-2{
+  position: absolute;
+  width: 427px;
+  height: 506px;
+  left: 815px;
+  top: 242px;
+  background: #C4C4C4;
+}
+.image-1{
+  background-image: url('muscle_task_left.jpg');
+  width: 427px;
+  height: 225px;
+  background-position: center;
+  background-size: contain;
+}
+.image-2{
+  background-image: url('muscle_task_right.jpg');
+  width: 427px;
+  height: 225px;
+  background-position: center;
+  background-size: contain;
+}
+.message{
+  margin: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.btn-set{
+  margin-right: 10px;
+  text-align: right;
+  margin-top: 20px;
+}
+.btn-xl{
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
