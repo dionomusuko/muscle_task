@@ -27,6 +27,9 @@ ja:
         password: パスワード
         password_confirmation: パスワード(確認)
         created_at: 登録日時
+      post:
+        title: タイトル
+        content: 内容
   date:
     abbr_day_names:
     - 日
