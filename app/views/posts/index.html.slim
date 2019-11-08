@@ -1,7 +1,11 @@
-h1 Posts#index
-
-- @posts.each do |post|
-  p = post.user.name
-  p = post.title
-  p = post.content
+.container
+  h1 Posts#index
+  ul.list-styled
+    li
+      - @posts.each do |post|
+        = post.user.name
+        span.text-muted.post-index-date 投稿日
+        = post.created_at.strftime("%Y/%m/%d")
+        br
+          = link_to post.title, post_path(post)
 

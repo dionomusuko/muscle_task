@@ -3,11 +3,13 @@
     - post.errors.full_messages.each do |message|
       li = message
 
-= form_with model: post, local: true do |f|
-  .form_group
-    = f.label :title
-    = f.text_field :title, class: 'form-control', id: 'post_title'
-  .form_group
-    = f.label :content
-    = f.text_field :content, class: 'form-control', id: 'post_content'
-    = f.submit nil, class: 'btn btn-primary'
+.container
+
+  = form_with model: post, local: true do |f|
+    .form_group
+      = f.label :title
+      = f.text_area :title, class: 'form-control', rows: "2", id: 'post_title'
+    .form_group
+      = f.label :content
+      = f.text_area :content, class: 'form-control', rows: "7", id: 'post_content'
+      = f.submit nil, class: 'btn btn-primary'
