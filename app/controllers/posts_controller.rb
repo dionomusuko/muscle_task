@@ -17,9 +17,10 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.new(post_params)
+
     if @post.save
-      redirect_to posts_path, notice: "投稿「#{@post.title}」を保存しました"
+      redirect_to @post, notice: "投稿「#{@post.title}」を保存しました"
     else
       render :new
     end
@@ -38,10 +39,12 @@ class PostsController < ApplicationController
 
 
   private
+
   def post_params
     params.require(:post).permit(:title, :content)
   end
+
   def set_post
-    @post = Post.find(params[:id])
+    @post = current_user.posts.find(params[:id])
   end
 end
