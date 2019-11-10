@@ -78,5 +78,9 @@ ul{
 }
 .post-lists{
   border: solid 1.5px #DADADA;
+  border-bottom: 0;
   margin: 0;
+}
+.border-bottom{
+  border-bottom: solid 1.5px #DADADA;
 }
