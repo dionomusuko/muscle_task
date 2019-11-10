@@ -11,7 +11,7 @@ ul{
   list-style: none;
 }
 
-// ホーム画面
+// home/index
 .app-title{
   background-color: #FDD835;
 }
@@ -69,4 +69,14 @@ ul{
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+}
+
+// post/index
+.post-style{
+  width: 60%;
+  background-color: white;
+}
+.post-lists{
+  border: solid 1.5px #DADADA;
+  margin: 0;
 }
