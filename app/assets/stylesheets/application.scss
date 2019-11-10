@@ -7,12 +7,14 @@ html {
 body{
   background-color: #F0F4C3;
 }
+ul{
+  list-style: none;
+}
 
-
+// home/index
 .app-title{
   background-color: #FDD835;
 }
-
 .home-main{
   color: #40C4FF;
   margin-top: 30px;
@@ -67,4 +69,22 @@ body{
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+}
+
+// post/index
+.post-ul{
+  width: 60%;
+  margin: auto;
+}
+.post-style{
+  margin-top: 10%;
+  background-color: white;
+}
+.post-lists{
+  border: solid 1.5px #DADADA;
+  border-bottom: 0;
+  margin: 0;
+}
+.border-bottom{
+  border-bottom: solid 1.5px #DADADA;
 }
