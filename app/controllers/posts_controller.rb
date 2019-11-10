@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     @post = current_user.posts.new(post_params)
 
     if @post.save
-      redirect_to @post, notice: "投稿「#{@post.title}」を保存しました"
+      redirect_to posts_path, notice: "投稿「#{@post.title}」を保存しました"
     else
       render :new
     end
