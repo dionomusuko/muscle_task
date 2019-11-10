@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
   end
 
   def show
@@ -27,6 +27,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = set_post
   end
 
   def update
