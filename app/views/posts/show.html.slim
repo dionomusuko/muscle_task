@@ -9,7 +9,7 @@ h1  タスクの詳細
       tr
         th = Post.human_attribute_name(:title)
         td = @post.title
-      tr
+      tr.post-content
         th = Post.human_attribute_name(:content)
         td = @post.content
 
