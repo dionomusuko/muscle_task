@@ -1,2 +1,16 @@
-h1 Posts#show
-p Find me in app/views/posts/show.html.slim
+h1  タスクの詳細
+.nav.justify-content-end
+  = link_to '一覧', posts_path, class: 'nav-link'
+  table.table.table-hover
+    tbody
+      tr
+        th = User.human_attribute_name(:name)
+        td = @post.user.name
+      tr
+        th = Post.human_attribute_name(:title)
+        td = @post.title
+      tr.post-content
+        th = Post.human_attribute_name(:content)
+        td = @post.content
+
+    = link_to '編集', edit_post_path, class: 'btn btn-primary mr-3'

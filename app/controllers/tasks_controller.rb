@@ -33,10 +33,11 @@ class TasksController < ApplicationController
   end
 
   def edit
+    @task = set_task
   end
 
   def update
-    if @task.update(task_params)
+    if @task.update!(task_params)
       redirect_to tasks_url, notice: "タスク「#{@task.name}」を更新しました。"
     else
       render :edit

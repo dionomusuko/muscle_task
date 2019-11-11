@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
   end
 
   def show
@@ -27,13 +27,16 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = set_post
   end
 
   def update
+    @post = set_post
+
     if @post.update(post_params)
-      redirect_to posts_path, notice: "投稿を「#{@post.title}」更新しました"
+      redirect_to @post, notice: "投稿を「#{@post.title}」更新しました"
     else
-      render :edit
+      render :edit, notice: "投稿の編集を失敗しました。"
     end
   end
 
