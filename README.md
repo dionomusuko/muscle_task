@@ -1,6 +1,9 @@
 # レジュメ 
 
-### 筋トレ好きのための筋トレタスク管理アプリ
+### 筋トレ好きのためのアプリ
+* 筋トレの記録ができる！
+* 筋トレした内容の共有ができる！
+* おすすめの筋トレについてSNSで話せる！
 
 #### Heroku： https://muscle-task.herokuapp.com/login
 
@@ -44,3 +47,7 @@ User
 * email:string
 * password:password_digest
 * admin:boolean
+
+Post
+* title:string
+* content:text
