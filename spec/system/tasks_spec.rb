@@ -10,11 +10,13 @@ describe 'タスク管理機能', type:  :system do
       visit login_path
       fill_in 'メールアドレス', with: login_user.email
       fill_in 'パスワード', with: login_user.password
-      click_button 'ログインする'
+      fill_in 'パスワード（確認）', with: login_user.password
+      click_button 'ログイン'
+      visit tasks_path
     end
 
     shared_examples_for 'ユーザーAが作成したメニューが表示される' do
-      it { expect(page).to have_content '最初のメニュー' }
+      it { expect(page).to have_content 'タスク一覧' }
     end
 
   describe '一覧表示機能'  do
@@ -22,15 +24,6 @@ describe 'タスク管理機能', type:  :system do
       let(:login_user) { user_a }
 
       it_behaves_like 'ユーザーAが作成したメニューが表示される'
-    end
-
-
-    context 'ユーザーBがログインしているとき' do
-      let(:login_user) { user_b }
-
-        it 'ユーザーAが作成したメニューが表示されない' do
-          expect(page).to have_no_content '最初のメニュー'
-        end
     end
   end
     describe '詳細表示機能' do
@@ -50,19 +43,19 @@ describe 'タスク管理機能', type:  :system do
 
       before do
         visit new_task_path
-        fill_in '名前', with: task_name
+        fill_in 'トレーニングメニュー', with: task_menu
         click_button '登録する'
       end
 
 
 
       context '新規作成画面で名前を入力しなかったとき' do
-        let(:task_name) { '' }
+        let(:task_menu) { '' }
 
         it 'エラー発生' do
 
           within '#error_explanation' do
-            expect(page).to have_content '名前を入力してください'
+            expect(page).to have_content 'トレーニングメニューを入力してください'
           end
         end
       end
