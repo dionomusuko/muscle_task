@@ -5,7 +5,7 @@
 * 筋トレした内容の共有ができる！
 * おすすめの筋トレについてSNSで話せる！
 
-#### Heroku： https://muscle-task.herokuapp.com/login
+#### Heroku： https://muscle-task.herokuapp.com
 
 #### ログイン
 
