@@ -21,18 +21,12 @@ ul{
   text-align: center;
 }
 .flex-item{
+  margin-top: 5%;
   display: flex;
-  flex-direction: row;
-  padding: 2.5% 0;
+  justify-content: center;
 }
-.rectangle-1{
-  position: absolute;
-  width: 427px;
-  height: 506px;
-  background: #C4C4C4;
-}
-.rectangle-2{
-  position: absolute;
+.rectangle{
+  margin: 5%;
   width: 427px;
   height: 506px;
   background: #C4C4C4;
