@@ -20,20 +20,21 @@ ul{
   margin-top: 30px;
   text-align: center;
 }
+.flex-item{
+  display: flex;
+  flex-direction: row;
+  padding: 2.5% 0;
+}
 .rectangle-1{
   position: absolute;
   width: 427px;
   height: 506px;
-  left: 198px;
-  top: 242px;
   background: #C4C4C4;
 }
 .rectangle-2{
   position: absolute;
   width: 427px;
   height: 506px;
-  left: 815px;
-  top: 242px;
   background: #C4C4C4;
 }
 .image-1{
