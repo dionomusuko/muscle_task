@@ -6,10 +6,11 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = set_post
+    set_post
   end
 
   def destroy
+    set_post
     @post.destroy
     redirect_to posts_path, notice: "投稿「#{@post.title}」を削除しました"
   end
