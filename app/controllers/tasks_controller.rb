@@ -10,7 +10,7 @@ class TasksController < ApplicationController
   end
 
   def show
-    @task = set_task
+     set_task
   end
 
   def new
@@ -28,6 +28,7 @@ class TasksController < ApplicationController
   end
 
   def destroy
+    set_task
     @task.destroy
     redirect_to tasks_url, notice: "タスク「#{@task.name}」を削除しました。"
   end
