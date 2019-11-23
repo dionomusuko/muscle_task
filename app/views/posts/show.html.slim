@@ -5,7 +5,7 @@ h1  タスクの詳細
     tbody
       tr
         th = User.human_attribute_name(:name)
-        td = @post.user.name
+        td = image_tag @post.user.name
       tr
         th = Post.human_attribute_name(:title)
         td = @post.title

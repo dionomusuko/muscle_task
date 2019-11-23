@@ -27,6 +27,7 @@ ja:
         password: パスワード
         password_confirmation: パスワード(確認)
         created_at: 登録日時
+        image: サムネイル画像
       post:
         title: タイトル
         content: 内容
