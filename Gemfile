@@ -24,8 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -42,6 +41,8 @@ gem 'i18n'
 gem 'slim-rails'
 gem 'kaminari', '~> 0.17.0'
 gem 'kaminari-bootstrap', '~> 3.0.1'
+gem 'carrierwave'
+gem 'fog'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

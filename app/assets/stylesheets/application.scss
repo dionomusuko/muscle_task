@@ -20,20 +20,15 @@ ul{
   margin-top: 30px;
   text-align: center;
 }
-.rectangle-1{
-  position: absolute;
-  width: 427px;
-  height: 506px;
-  left: 198px;
-  top: 242px;
-  background: #C4C4C4;
+.flex-item{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
 }
-.rectangle-2{
-  position: absolute;
+.rectangle{
+  margin: 5%;
   width: 427px;
   height: 506px;
-  left: 815px;
-  top: 242px;
   background: #C4C4C4;
 }
 .image-1{
