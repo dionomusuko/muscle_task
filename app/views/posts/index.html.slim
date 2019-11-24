@@ -4,7 +4,13 @@
     li.post-style
       - @posts.each do |post|
         p.post-lists
+          span.image-posts
+            - if post.user.image?
+              = image_tag post.user.image.thumb.to_s, class: 'thumbnail'
+            - else
+              = image_tag 'no-image.png', class: 'thumbnail'
           = post.user.name
+        p.posts-text
           span.space &nbsp;&nbsp;
           span.text-muted.post-index-date 投稿日
           span.space &nbsp;&nbsp;
