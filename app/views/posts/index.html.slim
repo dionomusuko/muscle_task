@@ -5,9 +5,9 @@
       - @posts.each do |post|
         p.post-lists
           - if post.user.image?
-            = image_tag post.user.image.thumb.to_s, class: 'thumbnail'
+            = image_tag post.user.image.thumb.to_s, class: 'thumb'
           - else
-            = image_tag 'no-image.png', class: 'thumbnail'
+            = image_tag 'no-image.png', class: 'thumb'
         .post-text
           = post.user.name
           span.space &nbsp;&nbsp;
@@ -18,6 +18,6 @@
             = link_to post.title, post_path(post)
             br
               span.like likeを追加する
-    .border-bottom
+        .border-bottom
     .post-page
       = paginate @posts
