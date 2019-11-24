@@ -67,24 +67,40 @@ ul{
 }
 
 // post/index
-.post-ul{
-  width: 60%;
-  margin: auto;
-}
-.post-style{
-  margin-top: 10%;
-  background-color: white;
-}
-.post-lists{
-  border: solid 1.5px #DADADA;
-  border-bottom: 0;
-  margin: 0;
-}
-.border-bottom{
-  border-bottom: solid 1.5px #DADADA;
-}
-.post-page{
-  margin-bottom: 10%;
+.post-ul {
+  width: 100%;
+  display: flex;
+
+  .post-style {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    width: 70%;
+
+    .post-lists {
+      border: solid 1.5px #DADADA;
+      border-bottom: 0;
+      margin: 0;
+      float: left;
+
+      .thumbnail {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .post-text{
+  }
+  .border-bottom {
+    border-bottom: solid 1.5px #DADADA;
+  }
+
+  .post-page {
+    margin-bottom: 10%;
+  }
 }
 
 // post/show

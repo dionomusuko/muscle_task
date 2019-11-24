@@ -1,8 +1,14 @@
+
 .container
   ul.post-ul
     li.post-style
       - @posts.each do |post|
         p.post-lists
+          - if post.user.image?
+            = image_tag post.user.image.thumb.to_s, class: 'thumbnail'
+          - else
+            = image_tag 'no-image.png', class: 'thumbnail'
+        .post-text
           = post.user.name
           span.space &nbsp;&nbsp;
           span.text-muted.post-index-date 投稿日
@@ -15,4 +21,3 @@
     .border-bottom
     .post-page
       = paginate @posts
-

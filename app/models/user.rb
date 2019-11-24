@@ -7,5 +7,5 @@ class User < ApplicationRecord
   mount_uploader :image, ImageUploader
 
   has_many :tasks
-  has_many :posts
+  has_many :posts, dependent: :destroy
 end
