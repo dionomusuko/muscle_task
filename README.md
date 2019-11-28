@@ -19,6 +19,7 @@
 * テンプレートエンジン:Slim 
 * scss
 * bootstrap
+* s3
 
 # 機能・Gem
 
@@ -32,6 +33,7 @@
     * CRUD機能
 * 環境変数(dotenv)
 * Rspec
+* s3による画像管理(productionのみ)
  
 
 
