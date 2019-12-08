@@ -5,7 +5,7 @@ html {
   font-size: 15px;
 }
 body{
-  background-color: #F0F4C3;
+  background-color: rgba(185, 183, 165, 0.4);
 }
 ul{
   list-style: none;
@@ -13,10 +13,10 @@ ul{
 
 // home/index
 .app-title{
-  background-color: #FDD835;
+  background-color: #ffffff;
 }
 .home-main{
-  color: #40C4FF;
+  color: #000000;
   margin-top: 30px;
   text-align: center;
 }
@@ -26,9 +26,10 @@ ul{
   justify-content: center;
 }
 .rectangle{
-  margin: 5%;
-  width: 40%;
-  background: #C4C4C4;
+  margin: 3%;
+  width: 560px;
+  height: 560px;
+  background: #ffffff;
 }
 .image-1{
   background-image: url('muscle_task_left.jpg');
