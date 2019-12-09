@@ -5,6 +5,7 @@ html {
   font-size: 15px;
 }
 body{
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   background-color: rgba(185, 183, 165, 0.4);
 }
 ul{
@@ -19,6 +20,9 @@ ul{
   color: #000000;
   margin-top: 30px;
   text-align: center;
+}
+.nav-class{
+  font-weight: bold;
 }
 .flex-item{
   margin-top: 5%;
