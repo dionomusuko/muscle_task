@@ -154,8 +154,7 @@
     <orderEntry type="library" scope="PROVIDED" name="parser (v2.6.5.0, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.14.5, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.1.1, rbenv: 2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.1, rbenv: 2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.7, rbenv: 2.6.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.2, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v5.2.3, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.0.3, rbenv: 2.6.3) [gem]" level="application" />
@@ -181,7 +180,6 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.10.1, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.0.16, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby_dep (v1.5.0, rbenv: 2.6.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.3, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, rbenv: 2.6.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.1.0, rbenv: 2.6.3) [gem]" level="application" />
